@@ -1,0 +1,170 @@
+<html>
+
+<head>
+	<script type="text/javascript" src="validate.js"></script>
+</head>
+
+<body>
+	<!--this is for setting background image-->
+
+	<body background='https://fosslandservices.ie/wp-content/uploads/2017/01/datasheed-background.jpg'>
+        
+        <!-- this is for form action that what will happen when submitting-->
+		<form action="#" name="Student Profile Detail " onSubmit="return(validate());">
+            
+            <!--this is the code where the table starts , the table will consists of all the detail and submit button also-->
+			<table cellpadding="10" width="80%" bgcolor="orange" align="center" cellspacing="10" >
+                
+                <!--this is table first row ,just for displaying heading of the page that is student profile detail-->
+				<h1>
+                    <center><font size=25><b>Student Profile Detail</b></font></center>
+                </h1>
+
+				<tr>
+					<td>Name</td>
+					<td>
+						<input type="text" name=textnames id="textname" size="30">
+					</td>
+                </tr>
+                
+				<tr>
+					<td>Father Name</td>
+					<td>
+						<input type="text" name="fathername" id="fathername" size="30">
+					</td>
+                </tr>
+                
+				<!--this row list reg no-->
+				<tr>
+					<td>Registeration number</td>
+					<td>
+						<input type="text" name=textnames id="Registeration number" size="10">
+					</td>
+                </tr>
+                
+				<!--this row list personal address-->
+				<tr>
+					<td>Personal Address line 1</td>
+					<td>
+						<input type="text" name="personaladdress1" id="personaladdress1" size="35">
+					</td>
+				</tr>
+                
+                <tr>
+					<td>Personal Address line 2</td>
+					<td>
+						<input type="text" name="personaladdress2" id="personaladdress2" size="30">
+					</td>
+				</tr>
+                
+                <!--this table row has email id and also function for uploading your photo -->
+				<tr>
+					<td>EmailId</td>
+					<td>
+						<input type="email" name="emailid" id="emailid" size="30">
+					</td>
+					<td style="padding-right: 110px"></td>
+					<td>
+						<img id="student-image" alt="your image" width="150" height="200" />
+						<input type="file" onchange="document.getElementById('student-image').src = window.URL.createObjectURL(this.files[0])">
+					</td>
+				</tr>
+                
+                <tr>
+					<td>Phone number</td>
+					<td>
+						<input type="tel" name="phone-no" id="phone-no" size="11">
+					</td>
+				</tr>
+                
+                <tr>
+					<td>Sex</td>
+					<td>
+						<input type="radio" name="sex" value="male" size="10">Male
+						<input type="radio" name="sex" value="Female" size="10">Female</td>
+				</tr>
+                
+                <tr>
+					<td>nationality</td>
+					<td>
+						<input type="text" name="Nationality" id="nationality" size="30">
+					</td>
+				</tr>
+                
+                <tr>
+					<td>Branch</td>
+					<td>
+						<select name="Branch">
+							<option value="-1" selected>select..</option>
+							<option value="branch1">ECE(Electronics and Communication Engineering)</option>
+							<option value="branch2">CSE(Computer Science and Engineering)</option>
+							<option value="branch3">Data Science and AI</option>
+						</select>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>Course</td>
+					<td>
+						<select name="Course">
+							<option value="-1" selected>select..</option>
+							<option value="B.Tech">B.TECH</option>
+							<option value="M.Tech">MCA</option>
+							<option value="PHd">MBA</option>
+						</select>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>State</td>
+					<td>
+						<select Name="State">
+							<option value="-1" selected>select..</option>
+							<option value="New Delhi">NEW DELHI</option>
+							<option value="Mumbai">MUMBAI</option>
+							<option value="Goa">GOA</option>
+							<option value="Bihar">BIHAR</option>
+						</select>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>PinCode</td>
+					<td>
+						<input type="text" name="pincode" id="pincode" size="30">
+					</td>
+				</tr>
+                
+                <tr>
+					<td>DOB</td>
+					<td>
+						<input type="text" name="dob" id="dob" size="30">
+					</td>
+				</tr>
+                
+                <tr>
+					<td>MobileNo</td>
+					<td>
+						<input type="text" name="mobileno" id="mobileno" size="30">
+					</td>
+				</tr>
+                
+                <tr>
+					<td>
+						<input type="reset">
+					</td>
+					<td colspan="2">
+						<input type="submit" value="Submit Form" />
+					</td>
+                </tr>
+                
+			</table>
+        
+        </form>
+		<p id="date"></p>
+		<script>
+			document.getElementById("date").innerHTML = Date();
+		</script>
+	</body>
+
+</html>
