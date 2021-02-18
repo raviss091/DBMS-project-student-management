@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Compating different devices and applicatons -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+<!-- Title bar -->
+	<title>TimeTable &nbsp;|&nbsp; Simp</title>
+	<link rel = "icon" type = "image/png" href = "stock/logo.png">
+
+<!-- Style sheet -->
+	<link rel="stylesheet" type="text/css" href="z-style.css" />
+
+<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Grenze Gotisch|Raleway|PT Sans Narrow|Dosis|Staatliches|Lobster|Abel|Overpass|Abril Fatface|Acme|Fira Sans Condensed|Oswald|Open Sans|Rowdies|Anton|Righteous|Alfa Slab One|Francois One|Archivo Black|Passion One|Oleo Script|Monoton|Candal|Carter One|Black Ops One|Racing Sans One|Palanquin Dark|Rakkas|Skranji|Timmana|Styles|Plaster|Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+
+<!-- Adobe fonts -->
+	<link rel="stylesheet" href="https://use.typekit.net/wur3dcn.css">
+
+<!-- jQuery files include -->
+	<script src="jQuery\jQuery compressed.js"></script>
+	<script src="jQuery\jquery-ui.js"></script>
+	<script src="jQuery\jQuery ease1.js"></script>
+	<script src="jQuery\jQuery ease2.js"></script>
+
+<!-- Javascript file -->
+	<script type="text/javascript" src="z-effect.js"></script>
+
+</head>
+
+<body class="current-page" id="tt">
+	<div id="navbar">
+		<img src="stock/logo.png" id="navbar-logo" class="navbar-contents">
+		<p id="navbar-simp" class="navbar-contents">Simp</p>		
+		<a href="" id="navbar-profile" class="navbar-contents">
+			<p id="navbar-arrow"><i id="navbar-arrow-control"></i></p>
+			<img src="stock/dp.jpeg" id="navbar-dp">
+		</a>
+		<div class="navbar-contents" id="navbar-notify"><img src="stock/icon-notify.png" id="navbar-notify-icon"></div>
+		<a href=""class="navbar-contents navbar-menus" id="navbar-tt"><p class="navbar-menus-text" id="navbar-tt-text">Time table</p><div class="navbar-menus-border" id="navbar-tt-border"></div></a>
+		<a href=""class="navbar-contents navbar-menus" id="navbar-attend"><p class="navbar-menus-text" id="navbar-attend-text">Attendence</p><div class="navbar-menus-border" id="navbar-attend-border"></div></a>
+		<a href=""class="navbar-contents navbar-menus" id="navbar-lib"><p class="navbar-menus-text" id="navbar-lib-text">Library</p><div class="navbar-menus-border" id="navbar-lib-border"></div></a>
+		<a href=""class="navbar-contents navbar-menus" id="navbar-home"><p class="navbar-menus-text" id="navbar-home-text">Home</p><div class="navbar-menus-border" id="navbar-home-border"></div></a>
+	</div> 
+
+<div id="clg-template">
+<div id="sub_tt">
+<h1 class="header1">Time Table</h1>
+
+<h2 class="header2">Weekly Timetable :</h2>
+
+<table id="tt01">
+  <tr>
+    <th>Day/Time</th>
+    <th id="9">9:00am-9:45am</th> 
+    <th id="10">10:00am-10:45am</th>
+    <th id="11">11:00am-11:45am</th>
+    <th id="12">12:00pm-12:45pm</th>
+    <th>12:45pm-1:15pm</th>
+    <th id="13">1:15pm-2:00pm</th>
+    <th id="14">2:15pm-3:00pm</th>
+    <th id="15">3:15pm-4:00pm</th>
+    <th id="16">4:15pm-5:00pm</th>
+    </tr>
+  <tr>
+    <td id="1">Mon</td>
+    <td>CS210</td>
+    <td>CS210</td>
+    <td>CS211</td>
+    <td>CS204</td>
+    <td id="ttc" rowspan="6"><b>Lunch</b></td>
+    <td>CS211</td> 
+    <td>HS205</td>
+    <td>CS210</td>
+    <td>CS210</td>
+  </tr>
+  <tr>
+    <td id="2">Tue</td>
+    <td>CS211</td>
+    <td>HS205</td>
+    <td>CS210</td>
+    <td>CS210</td>
+    <td>CS204</td> 
+    <td>CS211</td>
+    <td>HS205</td>
+    <td>MA201</td>
+  </tr>
+  <tr>
+    <td id="3">Wed</td>
+    <td>CS204</td>
+    <td>CS211</td>
+    <td>HS205</td>
+    <td>MA201</td>
+    <td>CS210</td> 
+    <td>CS210</td>
+    <td>CS211</td>
+    <td>CS204</td>
+  </tr>
+  <tr>
+    <td id="4">Thur</td>
+    <td>CS210</td>
+    <td>CS210</td>
+    <td>CS211</td>
+    <td>CS204</td>
+    <td>MA201</td> 
+    <td>MA201</td>
+    <td>CS204</td>
+    <td>CS209</td>
+  </tr>
+  <tr>
+    <td id="5">Fri</td>
+    <td>MA201</td>
+    <td>MA201</td>
+    <td>CS204</td>
+    <td>CS209</td>
+    <td>CS211</td> 
+    <td>CS209</td>
+    <td>CS209</td>
+    <td>MA201</td>
+  </tr>
+  <tr>
+    <td id="6">Sat</td>
+    <td>CS211</td>
+    <td>CS209</td>
+    <td>CS209</td>
+    <td>MA201</td>
+    <td>CS210</td> 
+    <td>CS210</td>
+    <td>CS211</td>
+    <td>CS204</td>
+  </tr>
+</table>
+</div>
+</div>
+</body>
+<script>
+    var d = new Date();
+    var y = d.getDay();
+    var z = d.getHours()
+    document.getElementById(y).style.color = "#009933";
+    document.getElementById(y).style.backgroundColor = "#b3ffcc";
+    document.getElementById(z).style.color = "#009933";
+    document.getElementById(z).style.backgroundColor = "#b3ffcc";
+</script>
+</html>
