@@ -1,0 +1,202 @@
+<html>
+
+<head>
+	<!-- Compating different devices and applicatons -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />	
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<!--this file is not implemented till now-->
+	<script type="text/javascript" src="validate.js"></script>
+
+	<link rel = "icon" type = "image/png" href = "stock/logo.png">
+
+	<!-- Style sheet -->
+	<link rel="stylesheet" type="text/css" href="z-style.css" />
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins|Grenze Gotisch|Raleway|PT Sans Narrow|Dosis|Staatliches|Lobster|Abel|Overpass|Abril Fatface|Acme|Fira Sans Condensed|Oswald|Open Sans|Rowdies|Anton|Righteous|Alfa Slab One|Francois One|Archivo Black|Passion One|Oleo Script|Monoton|Candal|Carter One|Black Ops One|Racing Sans One|Palanquin Dark|Rakkas|Skranji|Timmana|Styles|Plaster|Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+
+	
+	<!-- jQuery files include -->
+	<script src="jQuery\jQuery compressed.js"></script>
+	<script src="jQuery\jquery-ui.js"></script>
+	<script src="jQuery\jQuery ease1.js"></script>
+	<script src="jQuery\jQuery ease2.js"></script>
+
+
+	<script type="text/javascript" src="z-effect.js"></script>
+</head>
+
+<body>
+
+	<div id="navbar">
+		<img src="stock/logo.png" id="navbar-logo" class="navbar-contents">
+		<p id="navbar-simp" class="navbar-contents">Simp</p>		
+		<a href="" id="navbar-profile" class="navbar-contents">
+			<p id="navbar-arrow"><i id="navbar-arrow-control"></i></p>
+			<img src="stock/dp.jpeg" id="navbar-dp">
+		</a>
+		<div class="navbar-contents" id="navbar-notify"><img src="stock/icon-notify.png" id="navbar-notify-icon"></div>
+		<a href=""class="navbar-contents navbar-menus" id="navbar-tt"><p class="navbar-menus-text" id="navbar-tt-text">Time table</p><div class="navbar-menus-border" id="navbar-tt-border"></div></a>
+		<a href=""class="navbar-contents navbar-menus" id="navbar-attend"><p class="navbar-menus-text" id="navbar-attend-text">Attendence</p><div class="navbar-menus-border" id="navbar-attend-border"></div></a>
+		<a href=""class="navbar-contents navbar-menus" id="navbar-lib"><p class="navbar-menus-text" id="navbar-lib-text">Library</p><div class="navbar-menus-border" id="navbar-lib-border"></div></a>
+		<a href="home.html"class="navbar-contents navbar-menus" id="navbar-home"><p class="navbar-menus-text" id="navbar-home-text">Home</p><div class="navbar-menus-border" id="navbar-home-border"></div></a>
+	</div>
+
+
+	<!--this is for setting background image-->
+	<body background='https://fosslandservices.ie/wp-content/uploads/2017/01/datasheed-background.jpg'>
+        
+        <!-- this is for form action that what will happen when submitting-->
+		<form action="profiler.html" name="Student Profile Detail " onSubmit="return(validate());">
+            
+            <!--this is the code where the table starts , the table will consists of all the detail and submit button also-->
+			<table cellpadding="15" width="85%" bgcolor="white" style="margin: 0px auto;" cellspacing="15" >
+                
+                <!--this is table first row ,just for displaying heading of the page that is student profile detail-->
+				<h>
+                    <center><font size=25><b>Student Profile Detail</b></font></center>
+                </h>
+
+				<tr>
+					<td>Name</td>
+					<td>
+						<input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"  name="name" id="name"  value="Ravi Shankar Sharma" size="30" disabled>
+					</td>
+                </tr>
+                
+				<tr>
+					<td>Father Name</td>
+					<td>
+						<input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;" name="fathername" id="fathername" value="K K Kanahiya" size="30" disabled>
+					</td>
+                </tr>
+                
+				<!--this row list reg no-->
+				<tr>
+					<td>Registeration number</td>
+					<td>
+						<input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;" name=textnames id="Registeration number" value="19BCS091" size="10" disabled>
+					</td>
+                </tr>
+                
+				<!--this row list personal address-->
+				<tr>
+					<td>Personal Address line 1</td>
+					<td>
+						<input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"  name="personaladdress1" id="personaladdress1" value="SBI sainkheda, gadarwara"size="35" disabled>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>Personal Address line 2</td>
+					<td>
+						<input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"  name="personaladdress2" id="personaladdress2" value="district Narsinghpur" size="30" disabled>
+					</td>
+				</tr>
+                
+                <!--this table row has email id and also function for uploading your photo -->
+				<tr>
+					<td>EmailId</td>
+					<td>
+						<input type="email"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"  name="emailid" id="emailid" value="19bcs091@iiitdwd.ac.in" size="30" disabled>
+					</td>
+					<td style="padding-right: 110px"></td>
+					<td>
+						<img id="student-image" alt="your image" width="150" height="200" />
+						<input type="file" onchange="document.getElementById('student-image').src = window.URL.createObjectURL(this.files[0])">
+					</td>
+				</tr>
+                
+                <tr>
+					<td>Phone number</td>
+					<td>
+						<input type="tel"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;" name="phone-no" id="phone-no"  value="7259205197" size="11" disabled>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>Sex</td>
+					<td>
+						<input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"  name="sex" value="male" size="10" disabled>
+				</tr>
+                
+                <tr>
+					<td>nationality</td>
+					<td>
+						<input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"  name="Nationality" id="nationality" value="Indian" size="30" disabled>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>Branch</td>
+					<td>
+                        <input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"  name="branch" id="branch" value="CSE(Computer Science and Engineering)" size="30" disabled>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>Course</td>
+					<td>
+                        <input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"  name="course" id="course" value="B.Tech" size="30" disabled>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>State</td>
+					<td>
+                        <input type="text" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"   name="state" id="state" value="Bihar" size="30" disabled>
+
+					</td>
+				</tr>
+                
+                <tr>
+					<td>PinCode</td>
+					<td>
+						<input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"  name="pincode" id="pincode" size="30" value="000000" disabled>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>DOB</td>
+					<td>
+						<input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"  name="dob" id="dob" size="30" value="30 March 2002" disabled>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>MobileNo</td>
+					<td>
+						<input type="text"  style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 4mm;"  name="mobileno" id="mobileno" value="7996733229" size="30" disabled>
+					</td>
+				</tr>
+                
+                <tr>
+					<td>
+                        <button onclick="location.href='profiler.html'" type="button" 
+                        
+                        style="background-color:black;color:white;width:150px;height:40px;"  >Edit</button>
+					</td>
+				</tr>
+				
+				<tr>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				</tr>
+                
+			</table>
+        
+        </form>
+		<p id="date"></p>
+		<script>
+			document.getElementById("date").innerHTML = Date();
+		</script>
+	</body>
+
+</html>
