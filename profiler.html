@@ -7,11 +7,12 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 	<!--this file is not implemented till now-->
-	<script type="text/javascript" src="validate.js"></script>
+	<script type="text/javascript" src="profile_js_helper.js"></script>
 
 	<link rel = "icon" type = "image/png" href = "stock/logo.png">
 
 	<!-- Style sheet -->
+	<link rel="stylesheet" href="helper_profile.css" />
 	<link rel="stylesheet" type="text/css" href="z-style.css" />
 
 	<!-- Google fonts -->
@@ -52,13 +53,13 @@
 
 
 	<!--this is for setting background image-->
-	<body background='https://fosslandservices.ie/wp-content/uploads/2017/01/datasheed-background.jpg'>
+	<body background='https://tinyurl.com/c9r8txck'>
         
         <!-- this is for form action that what will happen when submitting-->
-		<form action="#" name="Student Profile Detail " onSubmit="return(validate());">
+		<form action="#" name="Student Profile Detail " onSubmit="return(validate());" method="POST">
             
             <!--this is the code where the table starts , the table will consists of all the detail and submit button also-->
-			<table cellpadding="15" width="85%" bgcolor="orange" align="center" cellspacing="15" >
+			<table cellpadding="15" width="85%"   style=" background-color: rgb(170, 241, 148); margin: 0px auto; border: 5px;" cellspacing="15" >
                 
                 <!--this is table first row ,just for displaying heading of the page that is student profile detail-->
 				<h1>
@@ -68,14 +69,14 @@
 				<tr>
 					<td>Name</td>
 					<td>
-						<input type="text" name=textnames id="textname" size="30">
+						<input type="text" name=textnames id="textname"  size="30">
 					</td>
                 </tr>
                 
 				<tr>
 					<td>Father Name</td>
 					<td>
-						<input type="text" name="fathername" id="fathername" size="30">
+						<input type="text" name="fathername" id="fathername"   size="30">
 					</td>
                 </tr>
                 
@@ -83,22 +84,23 @@
 				<tr>
 					<td>Registeration number</td>
 					<td>
-						<input type="text" name=textnames id="Registeration number" size="10">
+						<input type="text" name=textnames id="Registeration number"   size="10">
 					</td>
                 </tr>
-                
+				
 				<!--this row list personal address-->
+
 				<tr>
 					<td>Personal Address line 1</td>
 					<td>
-						<input type="text" name="personaladdress1" id="personaladdress1" size="35">
+						<input type="text" name="personaladdress1" id="personaladdress1"   size="35">
 					</td>
 				</tr>
                 
                 <tr>
 					<td>Personal Address line 2</td>
 					<td>
-						<input type="text" name="personaladdress2" id="personaladdress2" size="30">
+						<input type="text" name="personaladdress2" id="personaladdress2"  size="30">
 					</td>
 				</tr>
                 
@@ -106,7 +108,7 @@
 				<tr>
 					<td>EmailId</td>
 					<td>
-						<input type="email" name="emailid" id="emailid" size="30">
+						<input type="email" name="emailid" id="emailid"    size="30">
 					</td>
 					<td style="padding-right: 110px"></td>
 					<td>
@@ -118,7 +120,7 @@
                 <tr>
 					<td>Phone number</td>
 					<td>
-						<input type="tel" name="phone-no" id="phone-no" size="11">
+						<input type="tel" name="phone-no" id="phone-no"    size="11">
 					</td>
 				</tr>
                 
@@ -132,7 +134,7 @@
                 <tr>
 					<td>nationality</td>
 					<td>
-						<input type="text" name="Nationality" id="nationality" size="30">
+						<input type="text" name="Nationality" id="nationality"   size="30">
 					</td>
 				</tr>
                 
@@ -176,7 +178,7 @@
                 <tr>
 					<td>PinCode</td>
 					<td>
-						<input type="text" name="pincode" id="pincode" size="30">
+						<input type="text" name="pincode" id="pincode" placeholder="000000"  size="30">
 					</td>
 				</tr>
                 
@@ -193,23 +195,38 @@
 						<input type="text" name="mobileno" id="mobileno" size="30">
 					</td>
 				</tr>
+
+				<tr>
+					<td>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
+				</tr>
                 
                 <tr>
 					<td>
-						<input type="reset">
+						<button type="button" onclick="alert('Your submission is Recorded!')"
+						
+						style="background-color:rgb(0, 0, 0);color:white;width:150px;height:40px;" >SUBMIT</button>
 					</td>
-					<td colspan="2">
-						<input type="submit" value="Submit Form" />
+						
+					<td>
+						<button onclick="location.href='non_editable_profile.html'" type="button"
+						onclick="alert('You are going back to Profile Page!')"
+						style="background-color:rgb(0, 0, 0);color:white;width:150px;height:40px;" >Cancel</button>
+
 					</td>
 				</tr>
 				
 				<tr>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<td>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</td>
 				</tr>
                 
 			</table>
         
-        </form>
+		</form>
+		
 		<p id="date"></p>
 		<script>
 			document.getElementById("date").innerHTML = Date();
