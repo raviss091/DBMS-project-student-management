@@ -59,7 +59,7 @@
 		<form action="#" name="Student Profile Detail " onSubmit="return(validate());" method="POST">
             
             <!--this is the code where the table starts , the table will consists of all the detail and submit button also-->
-			<table cellpadding="15" width="85%"   style="  border: rgb(0, 0, 0); background-color: rgb(129, 255, 244); margin: 0px auto; border: 5px;" cellspacing="15" >
+			<table cellpadding="15" width="85%"   style=" box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%); border: rgb(252, 252, 252); background-color: rgb(250, 252, 252); margin: 0px auto; border: 5px;" cellspacing="15" >
                 
                 <!--this is table first row ,just for displaying heading of the page that is student profile detail-->
 				<h1>
@@ -69,14 +69,14 @@
 				<tr>
 					<td>Name</td>
 					<td>
-						<input type="text" name=textnames id="textname"  size="30">
+						<input type="text" name=textnames id="textname" style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);" size="30">
 					</td>
                 </tr>
                 
 				<tr>
 					<td>Father Name</td>
 					<td>
-						<input type="text" name="fathername" id="fathername"   size="30">
+						<input type="text" name="fathername" id="fathername" style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);"   size="30">
 					</td>
                 </tr>
                 
@@ -84,7 +84,7 @@
 				<tr>
 					<td>Registeration number</td>
 					<td>
-						<input type="text" name=textnames id="Registeration number"   size="10">
+						<input type="text" name=textnames id="Registeration number" style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);"   size="10">
 					</td>
                 </tr>
 				
@@ -93,14 +93,14 @@
 				<tr>
 					<td>Personal Address line 1</td>
 					<td>
-						<input type="text" name="personaladdress1" id="personaladdress1"   size="35">
+						<input type="text" name="personaladdress1" id="personaladdress1"  style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);"  size="35">
 					</td>
 				</tr>
                 
                 <tr>
 					<td>Personal Address line 2</td>
 					<td>
-						<input type="text" name="personaladdress2" id="personaladdress2"  size="30">
+						<input type="text" name="personaladdress2" id="personaladdress2"style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);"   size="30">
 					</td>
 				</tr>
                 
@@ -108,7 +108,7 @@
 				<tr>
 					<td>EmailId</td>
 					<td>
-						<input type="email" name="emailid" id="emailid"    size="30">
+						<input type="email" name="emailid" id="emailid" style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);"    size="30">
 					</td>
 					<td style="padding-right: 110px"></td>
 					<td>
@@ -120,27 +120,30 @@
                 <tr>
 					<td>Phone number</td>
 					<td>
-						<input type="tel" name="phone-no" id="phone-no"    size="11">
+						<input type="tel" name="phone-no" id="phone-no" style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);"    size="11">
 					</td>
 				</tr>
                 
                 <tr>
 					<td>Sex</td>
 					<td>
-						<input type="radio" name="sex" value="male" size="10">Male
-						<input type="radio" name="sex" value="Female" size="10">Female</td>
+						<input type="radio" name="sex" value="male" size="10"  style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);"  >Male
+						<input type="radio" name="sex" value="Female" size="10" style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);"  >Female </td>
 				</tr>
                 
                 <tr>
 					<td>nationality</td>
 					<td>
-						<input type="text" name="Nationality" id="nationality"   size="30">
+						<input type="text" name="Nationality" id="nationality" style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);"   size="30">
 					</td>
 				</tr>
                 
                 <tr>
 					<td>Branch</td>
 					<td>
+						<style>
+						box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);
+						</style>
 						<select name="Branch">
 							<option value="-1" selected>select..</option>
 							<option value="branch1">ECE(Electronics and Communication Engineering)</option>
@@ -154,6 +157,9 @@
 					<td>Course</td>
 					<td>
 						<select name="Course">
+							<style>
+								box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%); 
+							</style>
 							<option value="-1" selected>select..</option>
 							<option value="B.Tech">B.TECH</option>
 							<option value="M.Tech">MCA</option>
@@ -178,14 +184,14 @@
                 <tr>
 					<td>PinCode</td>
 					<td>
-						<input type="text" name="pincode" id="pincode" placeholder="000000"  size="30">
+						<input type="text"  style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);"  name="pincode" id="pincode" placeholder="000000"  size="30">
 					</td>
 				</tr>
                 
                 <tr>
 					<td>DOB</td>
 					<td>
-						<input type="text" name="dob" id="dob" size="30">
+						<input type="text" name="dob" id="dob" style="box-shadow: 8px 9px 23px -6px rgb(90 90 90 / 64%);"  size="30">
 					</td>
 				</tr>
                 
@@ -204,8 +210,7 @@
                 
                 <tr>
 					<td>
-						<button type="button" onclick="alert('Your submission is Recorded!')"
-						
+						<button type="button" onclick="alert('Your submission is Recorded!')" 
 						style="background-color:rgb(0, 0, 0);color:white;width:150px;height:40px;" >SUBMIT</button>
 					</td>
 						
