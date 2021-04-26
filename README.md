@@ -8,7 +8,13 @@ __Technology used are : HTML,CSS,JS,PHP in our project__
 
 __key features of our project are-__
 
-*In teacher side
+
+*Admin side*
+in admin side you need to insert the name of teachers and students.only those who are inserted by admin can sign in the system.\
+admin can both remove teacher and students or any other admin.
+
+
+*In teacher side*
 1.descriptive and objective type of questions.(no pdf uploading).\
 2.you can assign marks for each question  individually.\
 3.you need to mark answer for each objective question then and there only(so that system can correct it).\
@@ -17,7 +23,7 @@ __key features of our project are-__
 
 
 
-*In student side\
+*In student side*\
 you can enroll for specific course and if there are any tests assigned for those course ,they will be visible on your dashboard.\
 under each course there will be three section\
 1.present:test happening during the time(present)\
@@ -26,8 +32,14 @@ under each course there will be three section\
 4.a timer will be shown during the test to tell remaining time.\
 5.during test to avoid copying copy -paste functions are disabled.\
 6.You can't take screenshot during tests.\
-7.you can view your past test answers.\
+7.you can view your past test answers.
 
 *after the test is completed and evaluated a ranklist is generated to see your standing.
 
+
+__how to run the project__
+first you will need Xampp server.\
+copy all these files and keep them in htdocs folder of Xampp server.\
+now open phpMyadmin and store all the sql table in the databases.\
+now you can run the project by opening localhost/SignIn.php
 
