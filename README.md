@@ -26,15 +26,15 @@ __In teacher side__\
 
 
 __In student side__\
-you can enroll for specific course and if there are any tests assigned for those course ,they will be visible on your dashboard.\
-under each course there will be three section\
-1.present:test happening during the time(present)\
-2.upcoming:test which will happen in future.\
-3.past:test which are already completed.\
-4.a timer will be shown during the test to tell remaining time.\
-5.during test to avoid copying copy -paste functions are disabled.\
-6.You can't take screenshot during tests.\
-7.you can view your past test answers.
+1.you can enroll for specific course and if there are any tests assigned for those course ,they will be visible on your dashboard.\
+2.under each course there will be three section\
+(i).present:test happening during the time(present)\
+(ii).upcoming:test which will happen in future.\
+(iii).past:test which are already completed.\
+3.a timer will be shown during the test to tell remaining time.\
+4.during test to avoid copying copy -paste functions are disabled.\
+5.You can't take screenshot during tests.\
+6.you can view your past test answers.
 
 *after the test is completed and evaluated a ranklist is generated to see your standing.
 
