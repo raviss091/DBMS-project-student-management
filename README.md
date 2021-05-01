@@ -1,49 +1,53 @@
-# DBMS-project-student-management
+![0001-0090 (1)](https://user-images.githubusercontent.com/66675021/116770555-77e5d500-aa62-11eb-8b0c-864ff008713f.gif)
 
-This project will be for making a student exam management system for project given to us in (4th semester)
+**The Exam Management Portal** provides students and teachers with a platform to conduct tests on.
 
-*this project is an online examination system for students*
+Software Requirements*:
 
-__Technology used are : HTML,CSS,JS,PHP in our project__
+•	Web Server, preferably Apache**
 
-__key features of our project are-__
+• Web Browser
 
+• MySQL
 
-__Admin side__\
-In Admin side you need to insert the name of teachers and students.\
-Only those who are inserted by admin can sign in the system.\
-Admin can both remove teacher and students or any other admin.
+Xampp was used during the development cycle of this project and thus this readme will be guiding the reader accordingly so.
 
+Steps***:
+1. Download and install Xampp
+2. Place the files downloaded from from this Repository into htdocs(delete the prexisting files in the folder) present in the xampp folder form upon its installation.
+3. Place the php.ini file into the php folder in xampp.
+4. Place the sendmail.ini folder into the sendmail folder in xampp.
+5. Run the xampp-control.exe application and turn onn Apache and MySQL.
+6. Open PHPMyAdmin through the Xampp control panel(Admin button) and create a new database and name it based on the sql files within the files.
+7. Import the SQL Queries into their respective databases.
+8. Make changes in the db.php file according to the databases.
+9. Type localhost onto the url section of the browser.
+10. Input the following into the login section and then add your email ID into the role required(admin, teacher or student):
 
-__In teacher side__\
-1.Descriptive and objective type of questions.(no pdf uploading).\
-2.You can assign marks for each question  individually.\
-3.You need to mark answer for each objective question then and there only(so that system can correct it).\
-4.If somebody submits the paper late it will be indicated by red colour under his name.\
-5.If the paper has subjective question the teacher needs to correct it manually , objective questions are corrected automatically by system.\
-6.Teacher can either increase or decrease the marks if required for a particular student.
+Admin Username: pranav.prakriya@gmail.com
 
+Admin Password: a
 
+11. Make sure to logout
+12. Sign up and Enter the details asked.
 
-__In student side__\
-1.you can enroll for specific course and if there are any tests assigned for those course ,they will be visible on your dashboard.\
-2.under each course there will be three section\
-(i).present:test happening during the time(present)\
-(ii).upcoming:test which will happen in future.\
-(iii).past:test which are already completed.\
-3.a timer will be shown during the test to tell remaining time.\
-4.during test to avoid copying copy -paste functions are disabled.\
-5.You can't take screenshot during tests.\
-6.you can view your past test answers.
+In the case you do not understand the above instruction please refer to the user manual attached.
 
-*after the test is completed and evaluated a ranklist is generated to see your standing.
+* Only in order to run the application.
 
+** Apache was used during the development phase(Via Xampp).
 
-__how to run the project__\
-first you will need Xampp server.\
-copy all these files and keep them in htdocs folder of Xampp server.\
-now open phpMyadmin and store all the sql table in the databases.\
-now you can run the project by opening localhost/SignIn.php  .
+*** Only in order to run the application. A detailed step by step procedure can also be found in the user manual provided.
 
 
+**For a live working demo visit: [Click Here](https://examsystememp.herokuapp.com)**
 
+Team:
+- [@Chaplin962](https://github.com/Chaplin962)
+- [@Maheshparihar231](https://github.com/Maheshparihar231)
+- [@AbhisekRana](https://github.com/AbhisekRana)
+- [@pranav-k-m-iiitdwd](https://github.com/pranav-k-m-iiitdwd)
+- [@raviss091](https://github.com/raviss091)
+- [@Anuj-Sudhir-Kulkarni](https://github.com/Anuj-Sudhir-Kulkarni)
+- [@NiranjanMeghwal](https://github.com/NiranjanMeghwal)
+- [@Abhay0912](https://github.com/Abhay0912)
